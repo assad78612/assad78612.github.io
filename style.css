@@ -8,57 +8,53 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Header */
-header {
-    background-color: #5bc0de;
-    color: white;
-    padding: 20px 0;
+/* Header using Flexbox */
+.header-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #5bc0de;
+    color: white;
+    padding: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.nav-flex ul {
+    list-style: none;
     display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+.nav-flex ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+.nav-flex ul li a:hover {
     color: #ffd700;
     text-decoration: underline;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
-}
-
+/* Search bar */
 .search-bar {
+    margin: 20px auto;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .search-bar input {
     padding: 10px;
-    width: 50%;
     font-size: 16px;
+    width: 50%;
+    border: 2px solid #5bc0de;
+    border-radius: 5px;
 }
 
+/* Recipe Grid using CSS Grid */
 .recipe-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    padding: 20px;
 }
 
 .recipe {
@@ -69,11 +65,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 .recipe img {
-    width: auto;
-    height: auto;
+    width: 100%;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -83,7 +79,6 @@ main {
 }
 
 .recipe h3 {
-    color: #5bc0de;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -95,23 +90,43 @@ main {
     margin-top: 10px;
 }
 
-/* Footer */
-footer {
+/* About Us & Contact sections */
+#about, #contact {
+    background-color: #eaeaea;
+    padding: 40px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+#about h2, #contact h2 {
+    color: #5bc0de;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Footer using Flexbox */
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #212529;
     color: white;
     padding: 20px;
-    text-align: center;
-}
-
-/* Add margin to create gap between Recipes and About Us */
-#about {
-    margin-top: 60px;
-    /* Adjust this value for the gap size you want */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-flex ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .recipe-grid {
         grid-template-columns: 1fr;
+    }
+
+    .search-bar input {
+        width: 80%;
     }
 }
