@@ -11,3 +11,18 @@ function toggleDetails(element) {
         element.textContent = "Show more";  // Revert button text
     }
 }
+
+// Search Functionality
+function searchRecipes() {
+    const input = document.getElementById("searchBar").value.toLowerCase();
+    const recipes = document.getElementsByClassName("recipe");
+
+    for (let i = 0; i < recipes.length; i++) {
+        let title = recipes[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+        if (title.includes(input)) {
+            recipes[i].style.display = "";
+        } else {
+            recipes[i].style.display = "none";
+        }
+    }
+}
