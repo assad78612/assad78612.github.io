@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Juice Recipes - Flexbox & Grid</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Healthy Juice Recipes Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" id="searchBar" placeholder="Search for recipes...">
+        </div>
+
+        <section>
+            <header>
+                <h2>Our Top Professional Juice Recipes</h2>
+            </header>
+            <div class="recipe-grid" id="recipeGrid">
+                <div class="recipe">
+                    <h3>Green Detox Juice</h3>
+                    <img src="https://images.unsplash.com/photo-1617635141667-18a4a62081c2" alt="Green Detox Juice">
+                    <p>Ingredients: Kale, Spinach, Cucumber, Green Apples, Lemon, Ginger.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Berry Blast Juice</h3>
+                    <img src="https://images.unsplash.com/photo-1584551180630-c22d2f72ab5d" alt="Berry Blast Juice">
+                    <p>Ingredients: Blueberries, Raspberries, Strawberries, Honey, Mint.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Carrot-Orange Booster</h3>
+                    <img src="https://images.unsplash.com/photo-1617635141667-18a4a62081c2" alt="Carrot-Orange Booster">
+                    <p>Ingredients: Carrots, Oranges, Turmeric, Lemon.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Tropical Paradise Juice</h3>
+                    <img src="https://images.unsplash.com/photo-1552321554-74cd8d2db87c" alt="Tropical Paradise Juice">
+                    <p>Ingredients: Pineapple, Mango, Coconut Water, Lime.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Beetroot Energy Juice</h3>
+                    <img src="https://images.unsplash.com/photo-1584551180630-c22d2f72ab5d" alt="Beetroot Energy Juice">
+                    <p>Ingredients: Beetroot, Green Apples, Ginger, Lemon.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Citrus Zest Juice</h3>
+                    <img src="https://images.unsplash.com/photo-1598188308712-73d615e7d45f" alt="Citrus Zest Juice">
+                    <p>Ingredients: Oranges, Grapefruit, Lemon, Honey.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <!-- Additional Recipes -->
+                <div class="recipe">
+                    <h3>Pomegranate Power Juice</h3>
+                    <img src="https://images.unsplash.com/photo-1601294583112-ffbb71e8d2b7"
+                        alt="Pomegranate Power Juice">
+                    <p>Ingredients: Pomegranate, Orange, Ginger, Honey.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Apple Cinnamon Cooler</h3>
+                    <img src="https://images.unsplash.com/photo-1600891964441-bf5b8d591da3" alt="Apple Cinnamon Cooler">
+                    <p>Ingredients: Apples, Cinnamon, Lemon, Honey.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Watermelon Mint Refresher</h3>
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+                        alt="Watermelon Mint Refresher">
+                    <p>Ingredients: Watermelon, Mint, Lemon, Honey.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Ginger Lemon Immunity Shot</h3>
+                    <img src="https://images.unsplash.com/photo-1597351984211-2c51dd2f1f25"
+                        alt="Ginger Lemon Immunity Shot">
+                    <p>Ingredients: Ginger, Lemon, Turmeric, Black Pepper.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Orange Turmeric Booster</h3>
+                    <img src="https://images.unsplash.com/photo-1617635141667-18a4a62081c2"
+                        alt="Orange Turmeric Booster">
+                    <p>Ingredients: Oranges, Turmeric, Lemon, Honey.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+                <div class="recipe">
+                    <h3>Blueberry Green Tea Smoothie</h3>
+                    <img src="https://images.unsplash.com/photo-1567428485548-44752e9a3e1b"
+                        alt="Blueberry Green Tea Smoothie">
+                    <p>Ingredients: Blueberries, Green Tea, Spinach, Banana, Honey.</p>
+                    <span class="show-more" onclick="toggleDetails(this)">Show more</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <header>
+                <h2>About Us</h2>
+            </header>
+            <p>We are passionate about creating healthy juice recipes to promote wellness and vitality. Our blog curates
+                a variety of delicious juices, perfect for every occasion. Dive into our vibrant collection and find
+                your perfect blend!</p>
+        </section>
+
+        <section id="contact">
+            <header>
+                <h2>Contact Us</h2>
+            </header>
+            <p>Have any questions or suggestions? We would love to hear from you! Reach us at <a
+                    href="contact@healthyjuiceblog.com">contact@healthyjuiceblog.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Healthy Juice Recipes Blog - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
