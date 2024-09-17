@@ -27,7 +27,7 @@
 
     <main>
         <div class="search-bar">
-            <input type="text" id="searchBar" placeholder="Search for recipes...">
+            <input type="text" id="searchBar" placeholder="Search for recipes..." onkeyup="searchRecipes()">
         </div>
 
         <section>
@@ -87,8 +87,7 @@
 
                 <div class="recipe">
                     <h3>Apple Cinnamon Cooler</h3>
-                    <img src="images/Apple.jpg"
-                        alt="Apple Cinnamon Cooler">
+                    <img src="images/Apple.jpg" alt="Apple Cinnamon Cooler">
                     <p>Ingredients: Apples, Cinnamon, Lemon, Honey.</p>
                     <span class="show-more" onclick="toggleDetails(this)">Show more</span>
                 </div>

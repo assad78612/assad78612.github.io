@@ -105,7 +105,8 @@ footer {
 
 /* Add margin to create gap between Recipes and About Us */
 #about {
-    margin-top: 60px; /* Adjust this value for the gap size you want */
+    margin-top: 60px;
+    /* Adjust this value for the gap size you want */
 }
 
 /* Responsive Design */
