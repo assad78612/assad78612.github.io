@@ -103,6 +103,11 @@ footer {
     text-align: center;
 }
 
+/* Add margin to create gap between Recipes and About Us */
+#about {
+    margin-top: 60px; /* Adjust this value for the gap size you want */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .recipe-grid {
