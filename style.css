@@ -91,7 +91,8 @@ body {
 }
 
 /* About Us & Contact sections */
-#about, #contact {
+#about,
+#contact {
     background-color: #eaeaea;
     padding: 40px;
     text-align: center;
@@ -99,7 +100,8 @@ body {
     border-radius: 10px;
 }
 
-#about h2, #contact h2 {
+#about h2,
+#contact h2 {
     color: #5bc0de;
     font-size: 2em;
     margin-bottom: 20px;
